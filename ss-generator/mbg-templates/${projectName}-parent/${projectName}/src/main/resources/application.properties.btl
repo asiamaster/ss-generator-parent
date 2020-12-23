@@ -74,3 +74,5 @@ uap.indexPage=http://uap.diligrp.com/index/platform.html
 error.page.loginPage=http://uap.diligrp.com/login/toLogin.html
 error.page.indexPage=http://uap.diligrp.com/index/index.html
 web.instanceResolver=true
+
+project.serverPath=http://${appName}.diligrp.com
