@@ -78,4 +78,11 @@ error.page.loginPage=http://uap.diligrp.com/login/toLogin.html
 error.page.indexPage=http://uap.diligrp.com/index/index.html
 web.instanceResolver=true
 
-project.serverPath=http://${appName}.diligrp.com
+project.serverPath=http://${appName}.diligrp.com:8080
+
+#spring cloud
+spring.cloud.nacos.discovery.server-addr=nacos.diligrp.com:8848
+spring.cloud.nacos.discovery.group=MICROSERVICE
+spring.cloud.nacos.discovery.namespace=54c39cfe-d1c4-4022-a94b-a3486c5927fc
+management.endpoints.web.exposure.include=*
+spring.cloud.sentinel.eager=true

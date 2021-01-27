@@ -5,9 +5,9 @@ spring.datasource.username=root
 spring.datasource.password=123456
 
 #druid监控配置
-druidFilter.loginUsername=admin
-druidFilter.loginPassword=123456
-druidFilter.resetEnable=true
+#druidFilter.loginUsername=admin
+#druidFilter.loginPassword=123456
+#druidFilter.resetEnable=true
 
 #redis
 #spring.redis.database=0
@@ -20,13 +20,4 @@ druidFilter.resetEnable=true
 #spring.redis.pool.max-wait=-1
 #spring.redis.sentinel.master= # name of Redis client
 #spring.redis.sentinel.nodes= # comma-separated list of host:port pairs
-
-#spring cloud
-spring.cloud.nacos.discovery.server-addr=10.28.12.131:8848
-spring.cloud.nacos.discovery.group=MICROSERVICE
-spring.cloud.nacos.discovery.namespace=54c39cfe-d1c4-4022-a94b-a3486c5927fc
-management.endpoints.web.exposure.include=*
-spring.cloud.sentinel.eager=true
-
-
 
