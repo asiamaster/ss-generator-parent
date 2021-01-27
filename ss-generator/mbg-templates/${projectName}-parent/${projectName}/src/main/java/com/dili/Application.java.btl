@@ -18,9 +18,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @MapperScan(basePackages = {"com.dili.${appName}.mapper", "com.dili.ss.dao"})
-@ComponentScan(basePackages={"com.dili.ss","com.dili.${appName}"})
-@RestfulScan({"com.dili.${appName}.rpc"})
-@DTOScan(value={"com.dili.ss", "com.dili.${appName}.domain"})
+@ComponentScan(basePackages={"com.dili.ss", "com.dili.uap.sdk","com.dili.${appName}"})
+@RestfulScan({"com.dili.${appName}.rpc", "com.dili.uap.sdk.rpc"})
+@DTOScan(value={"com.dili.ss", "com.dili.uap.sdk.domain", "com.dili.${appName}.domain"})
 @EnableDiscoveryClient
 @EnableFeignClients
 public class Application extends SpringBootServletInitializer {
